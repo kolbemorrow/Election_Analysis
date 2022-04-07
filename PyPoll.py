@@ -5,12 +5,12 @@ import os
 file_to_load = os.path.join('Resources','election_results.csv')
 # Assign a variable to save the file to a path.
 file_to_save = os.path.join('analysis', 'election_analysis.txt')
-# Open the election results and read the file.
+# Open the election results.
 with open(file_to_load) as election_data: 
     # Read the file object with the reader function.
     file_reader = csv.reader(election_data)
 
-    # Read and print the header row from the CSV file.
+    # Read and print the header row.
     headers = next(file_reader)
     print(headers)
 
